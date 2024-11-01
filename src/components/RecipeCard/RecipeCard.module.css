@@ -1,0 +1,21 @@
+.recipeCard {
+  width: 297.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-text-color);
+}
+.recipeCard:hover {
+  color: var(--main-hoverText-color);
+}
+.img {
+  width: 297.5px;
+  height: 297.5px;
+  margin-bottom: 15px;
+}
+.title {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 10px;
+}

@@ -1,0 +1,37 @@
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 20px;
+  padding: 25px 0px;
+}
+.PaginationActive {
+  padding: 8px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #594632;
+}
+.PaginationPageLink {
+  color: var(--extra-bg-color);
+}
+.PaginationPageLink:hover {
+  cursor: pointer;
+  color: #ffaf58;
+}
+.PaginationBreakItem {
+  color: #d57d1f;
+}
+.PaginationNextLink {
+}
+.PaginationPrevLink {
+}
+.PaginationPageLink:hover,
+.PaginationBreakItem:hover,
+.PaginationNextLink:hover,
+.PaginationPrevLink:hover {
+  color: #ffaf58;
+}
