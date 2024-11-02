@@ -5,12 +5,12 @@ import sprites from "../../../public/sprite.svg";
 type IconProps = {
   icon: string;
   size: string;
-  color: string;
+  color?: string;
 };
 
 const Icon = ({ icon, size, color }: IconProps) => {
   return (
-    <svg width={size} height={size} fill={color}>
+    <svg width={size} height={size} fill={color ? color : "#d57d1f"}>
       <use href={`${sprites}#icon-${icon}`} />
     </svg>
   );

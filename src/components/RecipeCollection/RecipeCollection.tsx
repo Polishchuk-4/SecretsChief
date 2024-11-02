@@ -33,7 +33,7 @@ export default function RecipeCollection({
         {paginatedRecipes.map((recipe) => {
           return (
             <li key={recipe.idMeal} className={style.recipeCollectionItem}>
-              <Link to="/recipes">
+              <Link to={`/recipes/${recipe.idMeal}`}>
                 <RecipeCard
                   idMeal={recipe.idMeal}
                   strMealThumb={recipe.strMealThumb}

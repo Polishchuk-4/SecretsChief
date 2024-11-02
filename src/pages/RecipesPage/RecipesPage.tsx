@@ -1,38 +1,22 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import style from "./RecipesPage.module.css";
 
-import { fetchRecipes } from "../../recipes-api";
 import RecipeCollection from "../../components/RecipeCollection/RecipeCollection";
 import Loader from "../../components/Loader/Loader";
 
 import cn from "classnames";
-import { Recipe } from "../../components/types";
 
 const cnMain = cn(style.main, "container");
 
-export default function RecipesPage() {
-  const [isLoading, setIdLoading] = useState<boolean>(false);
-  const [recipes, setRecipes] = useState<Recipe[]>([]);
+import { RecipesContext } from "../../RecipesContext";
 
-  useEffect(() => {
-    const getRecipes = async () => {
-      try {
-        setIdLoading(true);
-        const response = await fetchRecipes();
-        setRecipes(response);
-      } catch (error) {
-        console.log(error);
-      } finally {
-        setIdLoading(false);
-      }
-    };
-    getRecipes();
-  }, []);
+export default function RecipesPage() {
+  const { recipes, isLoading, error } = useContext(RecipesContext);
 
   return (
     <main className={cnMain}>
       {isLoading && <Loader />}
-      <RecipeCollection collection={recipes} />
+      {recipes && <RecipeCollection collection={recipes} />}
     </main>
   );
 }
