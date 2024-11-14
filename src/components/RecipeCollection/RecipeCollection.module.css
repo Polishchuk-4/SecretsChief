@@ -1,8 +1,11 @@
 .recipeCollection {
   padding-top: 30px;
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 30px;
+  height: 100%;
+  width: 100%;
 }
 .recipeCollectionItem {
 }

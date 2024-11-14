@@ -14,10 +14,6 @@ export default function AppBar() {
     <header className={cnHeader}>
       <Logo />
       <div className={style.row}>
-        <NavLink to={"/"} className={cnLink}>
-          Home
-        </NavLink>
-
         <NavLink to={"/recipes"} className={cnLink}>
           Recipes
         </NavLink>

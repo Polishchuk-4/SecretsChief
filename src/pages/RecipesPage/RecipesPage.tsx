@@ -10,6 +10,7 @@ import cn from "classnames";
 const cnMain = cn(style.main, "container");
 
 import { RecipesContext } from "../../RecipesContext";
+import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 
 export default function RecipesPage() {
   const { recipes, isLoading, error } = useContext(RecipesContext);
@@ -38,6 +39,7 @@ export default function RecipesPage() {
           onChange={handlePageChange}
         />
       )}
+      {error && <ErrorMessage />}
     </main>
   );
 }
