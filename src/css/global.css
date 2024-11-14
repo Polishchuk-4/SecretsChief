@@ -1,23 +1,30 @@
-@import url("./components//reset.css");
-
-:root  {
+:root {
+  width: 1340px;
+  margin: 0 auto;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  overflow: auto;
+  min-height: 100vh;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(255, 255, 255);
 }
-#root {
-  width: 1280px;
+html,
+body {
+  min-height: 100vh;
+}
+body {
+  height: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: rgb(174, 174, 174);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  padding: 0 30px;
 }

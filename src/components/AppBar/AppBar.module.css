@@ -1,0 +1,26 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #22170c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: var(--main-text-color);
+  font-size: 20px;
+}
+.link:hover {
+  color: var(--main-hoverText-color);
+}
+.active {
+  color: var(--main-hoverText-color);
+  border-bottom: 1px solid var(--main-hoverText-color);
+}
