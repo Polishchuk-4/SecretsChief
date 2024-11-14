@@ -1,0 +1,20 @@
+.form {
+  width: 300px;
+  padding: 8px 10px;
+  background-color: #fddab8;
+  border-radius: 5px;
+  display: flex;
+  column-gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.btn {
+}
+.input {
+  color: var(--main-bg-color);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.input::placeholder {
+  color: var(--main-bg-color);
+}

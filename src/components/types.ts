@@ -4,4 +4,6 @@ export interface Recipe {
   strMeal: string;
   strArea?: string;
   strCategory?: string;
+  strInstructions?: string;
+  strYoutube?: string;
 }

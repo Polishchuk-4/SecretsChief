@@ -34,3 +34,10 @@ export const fetchRecipeById = async (id: string | undefined) => {
   console.log(result);
   return result;
 };
+
+export const fetchRecipeByName = async (name: string | undefined) => {
+  const response = await axios.get(`search.php?s=${name}`);
+  const result = response.data.meals;
+  console.log(result);
+  return result;
+};

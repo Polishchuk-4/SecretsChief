@@ -23,6 +23,7 @@ export const RecipesProvider = ({ children }: { children: ReactNode }) => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<FetchError | null>(null);
+
   console.log("context");
 
   useEffect(() => {

@@ -34,4 +34,5 @@
 .PaginationNextLink:hover,
 .PaginationPrevLink:hover {
   color: #ffaf58;
+  cursor: pointer;
 }

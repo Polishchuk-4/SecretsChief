@@ -5,7 +5,7 @@ import style from "./Pagination.module.css";
 import Icon from "../Icon/Icon";
 
 export interface PaginationProps {
-  initialPage?: number;
+  forcePage?: number;
   Pagination?: number;
   marginPagesDisplayed?: number;
   pageCount: number;
@@ -14,16 +14,18 @@ export interface PaginationProps {
 }
 
 export default function Pagination({
-  initialPage,
+  forcePage,
   marginPagesDisplayed,
   pageCount,
   pageRangeDisplayed,
   onChange,
 }: PaginationProps) {
+  console.log("pagination");
+
   return (
     <>
       <ReactPaginate
-        initialPage={initialPage}
+        forcePage={forcePage}
         marginPagesDisplayed={marginPagesDisplayed}
         pageCount={pageCount}
         pageRangeDisplayed={pageRangeDisplayed}
